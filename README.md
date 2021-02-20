@@ -15,6 +15,12 @@ Step 3: (put in cron, every minute if you like)  zrep -S pool1/prodfs
 And you're done!  At least with a super-simple implementation.
 Note that this is a Korn shell script, so you will need /bin/ksh on your system.
 
+On a [truenas](https://www.truenas.com/) system you can replace the first line with 
+```console
+#!/usr/local/bin/ksh93 -p
+```
+credits to https://www.truenas.com/community/threads/zrep-replication-and-failover-script.9966/post-213530
+
 ## Full documentation
 Many, many more options and features are documented, at
 
